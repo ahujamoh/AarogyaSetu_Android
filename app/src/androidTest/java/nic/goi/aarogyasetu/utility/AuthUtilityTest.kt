@@ -13,7 +13,7 @@ class AuthUtilityTest {
     @Test
     fun testGetToken() {
         AuthUtility.setToken(token)
-
+        logger.info("An info log message.")
         Assert.assertThat(AuthUtility.getToken(), Matchers.equalTo(token))
     }
 
